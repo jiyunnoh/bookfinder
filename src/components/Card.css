@@ -1,9 +1,8 @@
 .card {
     background-color: white;
+    border: 0.5px solid rgb(213, 213, 213);
     box-shadow: 7px 7px 7px rgba(0, 0, 0, .1);
-    min-height: 180px;
-    /* min-width: 400px; */
-    /* max-width: 600px; */
+    height: 180px;
     padding: 1rem 1rem 2rem 1rem;
     margin-bottom: 1rem;
     display: grid;
@@ -18,13 +17,7 @@
 }
 
 .card-info {
-    /* margin: 0; */
-    max-width: 300px;
     position: relative;
-}
-
-.card-info-text {
-    margin-bottom: 0.5rem;
 }
 
 .card-info-text__h2 {
@@ -39,3 +32,52 @@
     position: absolute;
     bottom: 0;
 }
+
+/* mobile */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        height: 200px;
+    }
+
+    .card-img {
+        margin: -30px auto auto 0px;
+    }
+
+    .card-info-text__h2 {
+        font-size: 18px;
+    }
+
+    .card-info-text__p {
+        font-size: 13px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .card {
+        gap: 1rem;
+        padding: 1rem;
+        height: 250px;
+    }
+
+    .card-img {
+        margin: -20% auto auto 1%;
+    }
+
+    .card-info-text__h2 {
+        font-size: 20px;
+    }
+
+    .card-info-text__p {
+        font-size: 16px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {}
+
+/* desktop */
+@media screen and (min-width: 1920px) {}

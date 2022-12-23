@@ -23,7 +23,8 @@ const Card = ({ image, title, authors, publisher, infoLink }) => {
     return (
         <div className='card'>
             <div className='card-img'>
-                <img src={image} alt={title} /></div>
+                <img src={image} alt={title} />
+            </div>
             <div className='card-info'>
                 <div className='card-info-text'>
                     <h2 className='card-info-text__h2'>{title}</h2>

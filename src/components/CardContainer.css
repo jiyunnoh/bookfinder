@@ -1,7 +1,28 @@
 .cardContainer {
     padding: 3rem 5rem;
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
+
+/* mobile */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .cardContainer {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .cardContainer {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {}
+
+/* desktop */
+@media screen and (min-width: 1920px) {}

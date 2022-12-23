@@ -1,6 +1,6 @@
 .header {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .header-h1 {
@@ -9,12 +9,12 @@
 
 .header-search {
     display: flex;
-    width: 400px;
+    width: 800px;
     padding: 8px;
     border: 1px solid rgb(213, 213, 213);
     box-shadow: 1px 1px 5px rgb(213, 213, 213);
     border-radius: 40px;
-    margin: 0 auto 0.5rem auto;
+    margin: 0 auto 0.8rem auto;
 }
 
 .header-search__input {
@@ -44,3 +44,31 @@
 .header-warning {
     height: 19px;
 }
+
+/* mobile */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .header {
+        padding: 1rem 0;
+    }
+
+    .header-search {
+        width: 85%
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .header-search {
+        width: 600px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+    .header-search {
+        width: 600px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1920px) {}

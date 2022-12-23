@@ -10,7 +10,6 @@ const BookContext = createContext({
     warningText: ''
 })
 
-// TODO: Update readme file 
 export const BookContextProvider = (props) => {
     const [books, setBooks] = useState([]);
     const [input, setInput] = useState('');

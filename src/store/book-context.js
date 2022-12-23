@@ -3,13 +3,13 @@ import React, { useState, createContext } from 'react'
 const BookContext = createContext({
     onSearch: () => { },
     onChange: () => { },
+    onClear: () => { },
     books: [],
     input: '',
     warningText: ''
 })
 
 // TODO: Update readme file 
-// TODO: responsive
 export const BookContextProvider = (props) => {
     const [books, setBooks] = useState([]);
     const [input, setInput] = useState('');
@@ -45,10 +45,15 @@ export const BookContextProvider = (props) => {
         setWarning('')
     }
 
+    const clearHandler = () => {
+        setInput('')
+    }
+
     return (
         <BookContext.Provider value={{
             onSearch: searchHandler,
             onChange: changeHandler,
+            onClear: clearHandler,
             books: books,
             input: input,
             warning: warning

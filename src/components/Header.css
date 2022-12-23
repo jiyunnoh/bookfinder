@@ -25,7 +25,7 @@
     margin: 0 1rem;
 }
 
-.header-search__btn {
+.header-search__btn__main {
     border-radius: 40px;
     background-color: rgb(251, 28, 74);
     color: white;
@@ -35,10 +35,19 @@
     margin: auto 0;
 }
 
-.header-search__btn:active {
+.header-search__btn__main:active {
     background-color: white;
     color: rgb(251, 28, 74);
     border: 1px solid rgb(251, 28, 74);
+}
+
+.header-search__btn__clear {
+    background-color: white;
+    color: black;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin: auto 1rem;
 }
 
 .header-warning {

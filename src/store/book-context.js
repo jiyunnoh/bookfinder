@@ -4,6 +4,7 @@ const BookContext = createContext({
     onSearch: () => { },
     onChange: () => { },
     onClear: () => { },
+    onKeyDown: () => { },
     books: [],
     input: '',
     warningText: ''
@@ -49,11 +50,18 @@ export const BookContextProvider = (props) => {
         setInput('')
     }
 
+    const keyDownHandler = (e) => {
+        if (e.key === 'Enter') {
+            searchHandler()
+        }
+    }
+
     return (
         <BookContext.Provider value={{
             onSearch: searchHandler,
             onChange: changeHandler,
             onClear: clearHandler,
+            onKeyDown: keyDownHandler,
             books: books,
             input: input,
             warning: warning

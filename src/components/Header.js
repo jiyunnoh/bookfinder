@@ -10,7 +10,7 @@ const Header = () => {
         <div className='header'>
             <h1 className='header-h1'>Book Finder</h1>
             <div className='header-search'>
-                <input className='header-search__input' type='text' onChange={bookCtx.onChange} value={bookCtx.input} />
+                <input className='header-search__input' type='text' onChange={bookCtx.onChange} onKeyDown={bookCtx.onKeyDown} value={bookCtx.input} />
                 <button className='header-search__btn__clear' onClick={bookCtx.onClear}><HiX /></button>
                 <button className='header-search__btn__main' onClick={bookCtx.onSearch}><FaSearch /></button>
             </div>

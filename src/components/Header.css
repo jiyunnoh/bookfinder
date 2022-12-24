@@ -35,6 +35,10 @@
     margin: auto 0;
 }
 
+.header-search__btn__main:hover {
+    cursor: pointer;
+}
+
 .header-search__btn__main:active {
     background-color: white;
     color: rgb(251, 28, 74);
@@ -48,6 +52,10 @@
     height: 30px;
     width: 30px;
     margin: auto 1rem;
+}
+
+.header-search__btn__clear:hover {
+    cursor: pointer;
 }
 
 .header-warning {

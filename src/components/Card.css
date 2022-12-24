@@ -31,6 +31,21 @@
 .card-info__btn {
     position: absolute;
     bottom: 0;
+    background-color: rgb(251, 28, 74);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+}
+
+.card-info__btn:hover {
+    cursor: pointer;
+}
+
+.card-info__btn:active {
+    background-color: white;
+    color: rgb(251, 28, 74);
+    border: 1px solid rgb(251, 28, 74);
 }
 
 /* mobile */

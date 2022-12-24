@@ -30,7 +30,7 @@ const Card = ({ image, title, authors, publisher, infoLink }) => {
                     <h2 className='card-info-text__h2'>{title}</h2>
                     <p className='card-info-text__p'>By: {authors}</p>
                     <p className='card-info-text__p'>Published by: {publisher}</p>
-                    <a className='card-info__btn' href={infoLink}><button>See this book</button></a>
+                    <a href={infoLink}><button className='card-info__btn'>See this book</button></a>
                 </div>
                 <div>
                 </div>
